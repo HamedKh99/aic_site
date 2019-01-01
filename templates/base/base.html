@@ -50,7 +50,12 @@
             {% endblock %}
         </div>
     {% endblock %}
-
+    {% block social %}
+        {% include 'base/social-media.html' %}
+    {% endblock %}
+    {% block timer %}
+        {% include 'base/timer.html' %}
+    {% endblock %}
     {% block footer %}
         {% include 'base/footer.html' %}
     {% endblock %}
