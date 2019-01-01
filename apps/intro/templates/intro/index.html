@@ -6,6 +6,7 @@
 
 {% block extra_header %}
 <link rel="stylesheet" href="{% static 'intro/css/stylesheet.css' %}">
+<link rel="stylesheet" href="{% static 'intro/css/2019stylesheet.css' %}">
 {% endblock %}
 
 {% block container %}
@@ -78,28 +79,57 @@
 
     </div>
 
-    <div class="ui section">
-        <div class="ui center aligned grid">
-            <div class="circle" id="purple">
-                {% trans 'Users' %}<br/>
-                <a>
-                    {{ users_count }}
-                </a>
-            </div>
-            <div class="circle" id="yellow">
-                {% trans 'Submissions' %}<br/>
-                <a>
-                    {{ submits_count }}
-                </a>
-            </div>
-            <div class="circle" id="blue">
-                {% trans 'Teams' %}<br/>
-                <a>
-                    {{ teams_count }}
-                </a>
-            </div>
+{#    <div class="ui section">#}
+{#        <div class="ui center aligned grid">#}
+{#            <div class="circle" id="purple">#}
+{#                {% trans 'Users' %}<br/>#}
+{#                <a>#}
+{#                    {{ users_count }}#}
+{#                </a>#}
+{#            </div>#}
+{#            <div class="circle" id="yellow">#}
+{#                {% trans 'Submissions' %}<br/>#}
+{#                <a>#}
+{#                    {{ submits_count }}#}
+{#                </a>#}
+{#            </div>#}
+{#            <div class="circle" id="blue">#}
+{#                {% trans 'Teams' %}<br/>#}
+{#                <a>#}
+{#                    {{ teams_count }}#}
+{#                </a>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+
+    <div class="container" dir="rtl">
+            <div class="row text-center">
+                <div class="col">
+                 <div class="counter">
+                  <p class="count-text ">کاربران</p>
+                  <i class="fas fa-user-check fa-4x"></i>
+                  <h2 class="timer count-title count-number" data-to="1000" data-speed="900"></h2>
+                 </div>
+                </div>
+
+                <div class="col">
+                 <div class="counter">
+                  <p class="count-text ">تیم ها</p>
+                  <i class="fas fa-user-friends fa-4x"></i>
+                  <h2 class="timer count-title count-number" data-to="1000" data-speed="900"></h2>
+                 </div>
+                </div>
+
+                <div class="col">
+                 <div class="counter">
+                  <p class="count-text ">ارسال ها</p>
+                  <i class="far fa-file-code fa-4x"></i>
+                  <h2 class="timer count-title count-number" data-to="1000" data-speed="900"></h2>
+                 </div>
+                </div>
+			</div>
         </div>
-    </div>
+
 </div>
 
 <div class="odd section" id="section-prizes">
@@ -371,4 +401,5 @@
 {% block footer_scripts %}
 {{ block.super }}
 <script src="{% static 'intro/js/scripts.js' %}"></script>
+<script src="{% static 'intro/js/count-up-submissions.js' %}"></script>
 {% endblock %}
