@@ -137,13 +137,13 @@ This set of fonts are used in this project under the license: RC4QT
     color: #c2c2c2 !important;
 }
 
-#footer {
-    width: 100vw;
-    min-height: 30vh !important;
-    background: url('/static/images/ai-background.png');
-    background-size: 100% 100% !important;;
-    background-repeat: no-repeat;
-}
+/*#footer {*/
+    /*width: 100vw;*/
+    /*min-height: 30vh !important;*/
+    /*background: url('/static/images/ai-background.png');*/
+    /*background-size: 100% 100% !important;;*/
+    /*background-repeat: no-repeat;*/
+/*}*/
 
 #footer .button {
     background-color: transparent;
@@ -203,7 +203,7 @@ This set of fonts are used in this project under the license: RC4QT
     background-color: #518799;
     color: white;
 }
-  
+
 #navbar .large-icon {
     font-size: 1.5em;
 }
