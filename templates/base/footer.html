@@ -1,25 +1,35 @@
-{% load i18n %}
-<div class="ui borderless fluid stackable attached segment center aligned" id="footer">
-    <div style="margin-left: auto; margin-right: auto;">
-        <a class="ui icon telegram button" href="https://t.me/aichallenge">
-            <i class="telegram icon"></i>
-        </a>
-        <a class="ui icon instagram button" href="https://www.instagram.com/aichallenge/">
-            <i class="instagram icon"></i>
-        </a>
+    {% load i18n %}
+{#    this should change#}
+<div class="footer" align="right">
+          <div class="footer-main">
+           <div class="container">
+            <div class="row">
+              <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                      <div class="myframegmap" style="margin:30px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9627430847677!2d51.34888151486223!3d35.702534430189345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00a61f30034b%3A0xe59caa3900cd3c54!2sTehran+Province%2C+Tehran%2C+Azadi+St%2C+Dept.+of+Computer+Eng.%2C+Iran!5e0!3m2!1sen!2s!4v1516927405125"  frameborder="0" style="border:0 " allowfullscreen></iframe>
+                      </div>
+                </div>
+                <div class="col-sm-6 " style="margin-top:20px; margin-bottom: 30px">
+                    <h2>با ما در ارتباط باشید</h2>
+                    <p>
+                        <i class="fa fa-phone"></i>    <a>021-6616-5781</a><br>
+                        <i class="fa fa-envelope"></i>    <a href="mailto:aichallenge@sharif.edu">aichallenge@sharif.edu</a><br>
+                        <i class="fa fa-map-marker"></i>    <a>تهران،خیابان آزادی،دانشگاه صنعتی شریف،دانشکده مهندسی کامپیوتر</a><br>
+                    </p>
 
-        <a class="ui icon twitter button" href="https://twitter.com/aichallenge">
-            <i class="twitter icon"></i>
-        </a>
-        <a class="ui icon linkedin button"
-           href="https://www.linkedin.com/showcase/sharif-ai-challenge/">
-            <i class="linkedin icon"></i>
-        </a>
-        <div class="horizonal divider"></div>
-        <div class="ui grey label">
-	{% blocktrans %}
-            © All rights reserved for <a href=\"http://ssc.ce.sharif.edu">Students' Scientific Chapter (SSC)</a>, 2018
-	{% endblocktrans %}
+                </div>
+            </div>
+           </div>
+          </div>
+
+        <div class="footer-copyright">
+            <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center"><p><strong>تمامی حقوق برای <a href="#">انجمن علمی دانشکده مهندسی کامپیوتر </a> دانشگاه صنعتی شریف محفوظ است</strong></p></div>
+                </div>
+            </div>
+           </div>
         </div>
-    </div>
-</div>
+      </div>
