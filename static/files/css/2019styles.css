@@ -7,7 +7,7 @@
 	margin: 5px;
 	padding: 8px;
 	font-size: 25px;
-	font-family: "Times New Roman", Times, serif;
+	/*font-family: "Times New Roman", Times, serif;*/
 	border-bottom: 1px solid white;
 }
 .footer-main a{
@@ -22,7 +22,7 @@
 	padding-top: 6px;
 	padding-left: 10px;
 	font-size: 18px;
-	font-family: "Times New Roman", Times, serif;
+	/*font-family: "Times New Roman", Times, serif;*/
 
 }
 
@@ -42,7 +42,7 @@
 	margin: 8px;
 	padding: 8px;
 	font-size: 16px;
-	font-family: "Times New Roman", Times, serif;
+	/*font-family: "Times New Roman", Times, serif;*/
 
 }
 
@@ -57,7 +57,6 @@
     margin: 0 auto;
 
 }
-
 .socialicon:hover{
 		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
@@ -75,7 +74,9 @@
 
    color: white;
    text-align: center;}
-
+html,body {
+  height: 100%;
+}
 .mysocial{
 	position: fixed;
    right: 10px;
@@ -95,6 +96,7 @@
 	position: fixed;
    left: 10px;
    bottom: 10px;
+
    color: white;
   align-items: center;
   text-align: center;
@@ -105,7 +107,7 @@
     padding: 10px;
 
 }
-.hour ,.day, .min, .sec{
+#hour ,#day, #min, #sec{
 	border: solid;
 	border-color: rgba(241, 245, 245,1);
 	border-radius: 100%;
@@ -113,9 +115,5 @@
 	padding: 5px;
 	font-size: 10px;
 }
-body,html{
-    height: 100%;
-}
-
   .mysocial ul { margin: 0; padding: 0; list-style: none; }
   .countdown ul { margin: 0; padding: 0; list-style: none; }
